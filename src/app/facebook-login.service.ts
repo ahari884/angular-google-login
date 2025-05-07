@@ -10,10 +10,13 @@ const oAuthConfig: AuthConfig = {
   scope: 'email public_profile',
   responseType: 'token',
   loginUrl: 'https://www.facebook.com/v19.0/dialog/oauth',
-      redirectUri: 'http://localhost:3000/auth/login',//window.location.origin,
-      oidc: false,
-      showDebugInformation: true,
-      requireHttps: false
+  redirectUri: 'http://localhost:3000/auth/login',//window.location.origin,
+  oidc: false,
+  showDebugInformation: true,
+  requireHttps: false,
+  customQueryParams: {
+    'social-auth': 'facebook'
+  }
   // silentRefreshRedirectUri: true,
   // requestAccessToken: true,
 }

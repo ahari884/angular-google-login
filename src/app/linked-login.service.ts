@@ -16,6 +16,7 @@ const authConfig: AuthConfig = {
   showDebugInformation: true,
   // usePkce: true,
   customQueryParams: {
+    'social-auth': 'linked-in',
     // LinkedIn sometimes requires `state`
     state: 'xyz'
   }

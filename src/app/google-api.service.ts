@@ -10,6 +10,9 @@ const oAuthConfig:AuthConfig = {
   // responseType: 'code',
   // silentRefreshRedirectUri: true,
   // requestAccessToken: true,
+  customQueryParams: {
+    'social-auth':  'google'
+  }
 }
 
 @Injectable({
