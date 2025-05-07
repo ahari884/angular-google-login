@@ -18,7 +18,7 @@ const oAuthConfig:AuthConfig = {
 export class GoogleApiService {
 
   constructor(private readonly oAuthService: OAuthService) {
-    this.init();
+    // this.init();
   }
 
   async init() {
